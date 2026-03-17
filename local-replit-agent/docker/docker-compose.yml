@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  workspace:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.workspace
+    container_name: replit-workspace
+    volumes:
+      - ../projects:/workspace
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "3001:3000"
+      - "5001:5000"
+      - "8081:8080"
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    networks:
+      - replit-net
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: '2.0'
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: replit-postgres
+    environment:
+      POSTGRES_USER: replit
+      POSTGRES_PASSWORD: replit_local
+      POSTGRES_DB: replit_db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - replit-net
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: replit-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - replit-net
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+
+networks:
+  replit-net:
+    driver: bridge
