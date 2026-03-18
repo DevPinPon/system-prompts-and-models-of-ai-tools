@@ -64,6 +64,42 @@ Based on research into current market trends, developer pain points, and underse
 
 ---
 
+## 6. Legacy-to-AI Bridge Middleware
+
+**Problem:** 75% of IT executives report their organizations still run on legacy systems never designed for AI. These systems contain decades of valuable data locked in proprietary formats. Enterprises can't do big-bang rewrites, but they need their legacy systems to work with modern AI workflows.
+
+**Solution:** Intelligent middleware that sits between legacy systems and modern AI infrastructure — extracting, cleaning, and structuring data from old systems without requiring rewrites. Provides API layers, data connectors, and incremental migration paths that make legacy databases, mainframes, and on-prem apps accessible to AI agents.
+
+**Why now:** 92% of organizations are looking to adopt AI, but most are blocked by legacy infrastructure. This is the #1 structural bottleneck in enterprise AI adoption. No dominant player has emerged.
+
+**Revenue model:** Enterprise licensing with per-connector pricing.
+
+---
+
+## 7. Outcome-Based Pricing Infrastructure for the Agent Era
+
+**Problem:** The shift from "Software as a Service" to "Service as Software" is breaking traditional per-seat SaaS pricing. When one AI agent replaces 20 software licenses, per-seat models collapse. Companies need new billing infrastructure for outcome-based and usage-based pricing, but Stripe and existing billing tools weren't built for this.
+
+**Solution:** A billing and metering platform purpose-built for AI-era pricing models — track outcomes delivered (not seats occupied), meter agent work units, handle hybrid human+agent billing, and provide revenue analytics that map to value delivered rather than users logged in.
+
+**Why now:** "Seat compression" is already happening at scale. Enterprises are scrambling to redesign pricing as AI agents replace human workflows. The billing infrastructure gap is real and urgent.
+
+**Revenue model:** Percentage of revenue processed + SaaS platform fee.
+
+---
+
+## 8. AI Code Provenance & Quality Attestation
+
+**Problem:** As AI generates more code (84% of devs use AI coding tools daily), no one can reliably verify the quality, security, or origin of AI-generated code. Hallucinated dependencies, subtle logic errors, and security vulnerabilities in generated code are emerging as serious risks. There's no "chain of custody" for AI-written software.
+
+**Solution:** A platform that provides provenance tracking, automated quality attestation, and security verification specifically for AI-generated code. Integrates into Git workflows to tag, verify, and certify code origin — producing Software Bills of Materials (SBOMs) that distinguish human-written from AI-generated components.
+
+**Why now:** Digital provenance is becoming critical as AI-generated content becomes ubiquitous. Supply chain security regulations are tightening. NIST and industry bodies are pushing for SBOMs and attestation. No tool specifically addresses AI code provenance.
+
+**Revenue model:** Developer tool SaaS with enterprise compliance tier.
+
+---
+
 ## Comparison Matrix
 
 | Idea | Market Size | Competition | Technical Difficulty | Time to MVP |
@@ -73,7 +109,21 @@ Based on research into current market trends, developer pain points, and underse
 | Compliance-as-Code | $15B+ (GRC) | Medium | Medium | 4-5 months |
 | Carbon-Intelligent Dev | $32B+ (climate) | Very Low | Medium | 3-4 months |
 | No-Code to Pro-Code | $44.5B (low-code) | Low | High | 5-7 months |
+| Legacy-to-AI Bridge | $824B (software) | Low | High | 5-6 months |
+| Outcome-Based Billing | $347B (AI market) | Low | Medium | 3-4 months |
+| AI Code Provenance | $347B (AI market) | Very Low | Medium | 3-4 months |
 
 ---
 
-*Research conducted March 2026. Sources include Gartner, industry reports, developer surveys, and startup ecosystem analysis.*
+## Sources
+
+Research conducted March 2026 from:
+- [Gartner](https://www.gartner.com) / [Deloitte 2026 Software Outlook](https://www.deloitte.com/us/en/insights/industry/technology/technology-media-telecom-outlooks/software-industry-outlook.html)
+- [Capgemini Top Tech Trends 2026](https://www.capgemini.com/insights/research-library/top-tech-trends-of-2026/)
+- [Microsoft: What's Next in AI](https://news.microsoft.com/source/features/ai/whats-next-in-ai-7-trends-to-watch-in-2026/)
+- [IBM AI Tech Trends 2026](https://www.ibm.com/think/news/ai-tech-trends-predictions-2026)
+- [Keyhole Software: Dev Statistics 2026](https://keyholesoftware.com/software-development-statistics-2026-market-size-developer-trends-technology-adoption/)
+- [DZone: Developer Tools That Matter 2026](https://dzone.com/articles/developer-tools-that-actually-matter-in-2026)
+- [DevOps.com: Software Dev Trends 2026](https://devops.com/3-notable-software-development-trends-for-2026-and-beyond/)
+- [Finextra: Why 2026 Belongs to the Specialist](https://www.finextra.com/the-long-read/1559/why-2026-belongs-to-the-specialist-not-the-generalist)
+- [Market Clarity: Underserved Niches 2026](https://mktclarity.com/blogs/news/list-underserved-niches)
